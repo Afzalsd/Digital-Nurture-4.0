@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 16 – Positioning Utilities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      padding-bottom: 80px; /* space for fixed footer */
+    }
+    h2 {
+      color: #0d6efd;
+    }
+    .section {
+      background: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    /* For Exercise 16.2 */
+    .image-container {
+      position: relative;
+      display: inline-block;
+      max-width: 300px;
+    }
+    .badge-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1rem;
+      padding: 0.5em 0.75em;
+      border-radius: 0.75rem;
+      background-color: #dc3545; /* Bootstrap danger red */
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    /* Fixed footer style */
+    footer.fixed-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: 600;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+      z-index: 1030;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Exercise 16.1: Fixed Footer -->
+  <div class="section">
+    <h2 class="mb-4">Exercise 16.1 – Fixed Footer</h2>
+    <p>
+      Scroll down to see the footer fixed at the bottom of the page, using <code>position-fixed</code> and <code>bottom-0</code>.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non purus nec augue efficitur lacinia. Integer in elit eu arcu dictum condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Keep scrolling to confirm the footer stays in place.</p>
+    <p style="margin-bottom: 300px;">(Extra space to demonstrate footer fixed position)</p>
+  </div>
+
+  <!-- Exercise 16.2: Badge Overlay -->
+  <div class="section">
+    <h2 class="mb-4">Exercise 16.2 – Overlay Badge on Image</h2>
+    <div class="image-container position-relative">
+      <img 
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80" 
+        alt="Sample Image" 
+        class="img-fluid rounded"
+      />
+      <span class="badge-overlay">New</span>
+    </div>
+  </div>
+
+</div>
+
+<footer class="fixed-footer">
+  Fixed Footer - Always Visible at Bottom
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

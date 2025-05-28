@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 9 – Bootstrap Buttons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #0d6efd;
+    }
+
+    .btn-space {
+      margin: 0.25rem;
+    }
+
+    .btn-group label {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Exercise 9.1: Button Variants -->
+    <div class="section">
+      <h2 class="mb-4">Exercise 9.1 – Contextual Buttons</h2>
+
+      <h5 class="mb-3">Solid Buttons</h5>
+      <div class="mb-3">
+        <button class="btn btn-primary btn-space">Primary</button>
+        <button class="btn btn-secondary btn-space">Secondary</button>
+        <button class="btn btn-success btn-space">Success</button>
+        <button class="btn btn-danger btn-space">Danger</button>
+        <button class="btn btn-warning btn-space">Warning</button>
+        <button class="btn btn-info btn-space">Info</button>
+        <button class="btn btn-light btn-space border">Light</button>
+        <button class="btn btn-dark btn-space">Dark</button>
+        <button class="btn btn-link btn-space">Link</button>
+      </div>
+
+      <h5 class="mb-3 mt-4">Outline Buttons</h5>
+      <div class="mb-3">
+        <button class="btn btn-outline-primary btn-space">Primary</button>
+        <button class="btn btn-outline-secondary btn-space">Secondary</button>
+        <button class="btn btn-outline-success btn-space">Success</button>
+        <button class="btn btn-outline-danger btn-space">Danger</button>
+        <button class="btn btn-outline-warning btn-space">Warning</button>
+        <button class="btn btn-outline-info btn-space">Info</button>
+        <button class="btn btn-outline-light btn-space text-dark border">Light</button>
+        <button class="btn btn-outline-dark btn-space">Dark</button>
+      </div>
+    </div>
+
+    <!-- Exercise 9.2: Toggle Buttons -->
+    <div class="section">
+      <h2 class="mb-4">Exercise 9.2 – Toggle Button Group</h2>
+
+      <h5 class="mb-3">Checkbox Toggle Buttons</h5>
+      <div class="btn-group" role="group" aria-label="Checkbox toggle buttons">
+        <input type="checkbox" class="btn-check" id="toggle1" autocomplete="off">
+        <label class="btn btn-outline-success btn-space" for="toggle1">Option A</label>
+
+        <input type="checkbox" class="btn-check" id="toggle2" autocomplete="off">
+        <label class="btn btn-outline-success btn-space" for="toggle2">Option B</label>
+
+        <input type="checkbox" class="btn-check" id="toggle3" autocomplete="off">
+        <label class="btn btn-outline-success btn-space" for="toggle3">Option C</label>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

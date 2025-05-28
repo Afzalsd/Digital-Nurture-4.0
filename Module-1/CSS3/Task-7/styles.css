@@ -1,0 +1,41 @@
+/* =======================================
+   TABLE STYLING
+======================================= */
+
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse; /* Collapse borders */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Header row */
+th {
+  background-color: #007bff; /* Bright blue */
+  color: white;
+  font-weight: 700;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #f2f6fc; /* Light blueish */
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+  background-color: #dce8ff;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}

@@ -1,0 +1,19 @@
+/* ===== Reusable Styles for Local Community Event Portal ===== */
+
+/* Header styles */
+header {
+    font-size: 1.5em;
+}
+
+/* Event card styles */
+.event-card h3 {
+    color: #003366;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    font-size: 0.9em;
+}

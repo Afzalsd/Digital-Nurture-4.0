@@ -1,0 +1,47 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#mainHeader {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #0077cc;
+  padding: 1rem 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+/* Responsive Testing: Smaller Screens */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

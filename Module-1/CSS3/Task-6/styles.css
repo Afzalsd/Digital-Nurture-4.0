@@ -1,0 +1,67 @@
+/* =======================================
+   LINK STYLING
+======================================= */
+
+/* Normal link */
+a:link {
+  color: #007bff; /* Bright blue */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hovered link */
+a:hover {
+  color: #0056b3; /* Darker blue */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Visited link */
+a:visited {
+  color: #4b0082; /* Indigo */
+}
+
+/* Active (clicked) link */
+a:active {
+  color: #003366; /* Dark navy */
+  text-decoration: underline;
+}
+
+/* =======================================
+   LIST STYLING
+======================================= */
+
+/* General unordered and ordered lists */
+ul, ol {
+  padding-left: 1.5rem; /* indent */
+  margin-bottom: 1.2rem;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* List items padding for spacing */
+li {
+  padding: 6px 0;
+}
+
+/* Navigation menu list — remove bullets and spacing */
+nav ul {
+  list-style-type: none; /* no bullets */
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* spacing between nav items */
+  justify-content: center; /* center nav horizontally */
+  background-color: #f8f9fa; /* light background for nav */
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+}
+

@@ -1,0 +1,117 @@
+/* =======================================
+   UNIVERSAL RESET
+======================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================================
+   BASE STYLES WITH BACKGROUND IMAGE
+   Using RGBA fallback color and image
+======================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e3f2fd; /* Fallback color */
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =======================================
+   HEADER STYLES WITH GRADIENT
+   Using HEX and linear-gradient
+======================================= */
+#mainHeader {
+    background: linear-gradient(to right, #004d99, #3399ff); /* City council theme */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 4px solid #003366;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+#mainHeader h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+#mainHeader p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* =======================================
+   SECTION HEADER WITH GRADIENT TEXT
+   Linear-gradient text for h2
+======================================= */
+h2 {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, #003366, #3399ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =======================================
+   EVENT CARD STYLES WITH RGBA
+======================================= */
+.eventCard {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 85%;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+}
+
+h3, p {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* =======================================
+   CTA BUTTON
+   City-themed with HEX color
+======================================= */
+.cta-button {
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* =======================================
+   FOOTER STYLES
+======================================= */
+footer {
+    background-color: rgba(0, 51, 102, 0.85);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}

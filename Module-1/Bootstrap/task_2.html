@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap 5 - Folder Structure & JS Setup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    pre {
+      background-color: #eef3f8;
+      padding: 1rem;
+      border-left: 4px solid #198754;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4 text-success">Task 2.1 – Understanding Bootstrap 5 Directory Structure</h1>
+
+    <p>If you download Bootstrap directly from the <a href="https://getbootstrap.com" target="_blank">Bootstrap website</a>, you’ll get a folder with files arranged like this:</p>
+
+    <pre>
+bootstrap/
+├── css/
+│   ├── bootstrap.min.css
+│   ├── bootstrap.css
+│   └── bootstrap.min.css.map
+├── js/
+│   ├── bootstrap.bundle.min.js
+│   ├── bootstrap.min.js
+│   └── bootstrap.bundle.min.js.map
+└── icons/ (optional - separate download)
+    </pre>
+
+    <h4>📂 <code>css/</code> Folder</h4>
+    <ul>
+      <li><code>bootstrap.min.css</code>: Optimized and compressed CSS file for fast loading.</li>
+      <li><code>bootstrap.css</code>: Readable version for customization or learning purposes.</li>
+      <li><code>.map</code> files: Support debugging tools by mapping minified files to original ones.</li>
+    </ul>
+
+    <h4>📂 <code>js/</code> Folder</h4>
+    <ul>
+      <li><code>bootstrap.bundle.min.js</code>: Includes all Bootstrap JS and Popper (used in dropdowns, tooltips, etc.).</li>
+      <li><code>bootstrap.min.js</code>: Only Bootstrap’s JS, needs Popper separately if used.</li>
+      <li><code>.map</code>: Useful for developers while debugging.</li>
+    </ul>
+
+    <h4>📂 <code>icons/</code> Folder (if used)</h4>
+    <ul>
+      <li>Contains SVG files and CSS for using Bootstrap Icons in your pages.</li>
+      <li>To use it, add:
+        <pre>&lt;link rel="stylesheet" href="icons/bootstrap-icons.css"&gt;</pre>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="mb-4 text-success">Task 2.2 – Including Bootstrap’s JS Bundle</h1>
+    <p>To make Bootstrap's interactive components like modals, dropdowns, or tooltips work, include the JS bundle in your HTML file like this:</p>
+    <pre>
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+    </pre>
+
+    <p>This ensures both Bootstrap and Popper (required for dynamic features) are available without any separate setup.</p>
+  </div>
+
+  <!-- Bootstrap JS (Required for interactive components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

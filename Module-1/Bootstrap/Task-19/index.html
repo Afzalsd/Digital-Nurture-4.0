@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customized Bootstrap</title>
+  <link rel="stylesheet" href="dist/custom.css" />
+  <style>
+    pre {
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      padding: 1em;
+      border-radius: 0.3rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <h1 class="mb-4 text-primary">Exercise 19 - Customization with Sass</h1>
+
+  <section class="mb-5">
+    <h2>Exercise 19.1 – Setup & Custom SCSS</h2>
+
+    <h5>Terminal Commands</h5>
+    <pre>
+mkdir bootstrap-sass-project
+cd bootstrap-sass-project
+npm init -y
+npm install bootstrap sass</pre>
+
+    <h5>_variables.scss</h5>
+    <pre>
+$primary: #4b0082;
+$border-radius: 1rem;</pre>
+
+    <h5>custom.scss</h5>
+    <pre>
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";</pre>
+
+    <h5>Build Sass</h5>
+    <pre>
+npx sass scss/custom.scss dist/custom.css --source-map</pre>
+  </section>
+
+  <section class="mb-5">
+    <h2>Exercise 19.2 – Result Preview</h2>
+
+    <h3 class="text-primary">Indigo Theme Applied</h3>
+    <button class="btn btn-primary rounded-pill px-4">Custom Primary</button>
+    <button class="btn btn-secondary rounded mt-3">Rounded Secondary</button>
+
+    <div class="card shadow mt-5" style="width: 18rem; margin: auto;">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top rounded-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Styled Card</h5>
+        <p class="card-text">Using your customized Bootstrap CSS built with Sass.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

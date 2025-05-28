@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Box Model & Layout Control</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h2 style="text-align:center; font-family: Arial, sans-serif; margin-top: 40px;">
+    Event Cards with Spacing and Borders
+  </h2>
+
+  <div class="eventCard">
+    <h3>Community Cleanup Drive</h3>
+    <p>Date: 2025-06-12</p>
+    <p>Join us to clean up the local park and make our community greener!</p>
+  </div>
+
+  <div class="eventCard">
+    <h3>Neighborhood Potluck</h3>
+    <p>Date: 2025-06-18</p>
+    <p>Bring your favorite dish and enjoy food and fun with neighbors.</p>
+  </div>
+
+  <h2 style="text-align:center; font-family: Arial, sans-serif; margin-top: 50px;">
+    Form Fields Highlight on Focus
+  </h2>
+
+  <form style="max-width: 400px; margin: 20px auto; font-family: Arial, sans-serif;">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Your Name" /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="Your Email" /><br /><br />
+
+    <label for="event">Select Event:</label><br />
+    <select id="event" name="event">
+      <option>Community Cleanup Drive</option>
+      <option>Neighborhood Potluck</option>
+    </select><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2 style="text-align:center; font-family: Arial, sans-serif; margin-top: 50px;">
+    Visibility: hidden vs Display: none
+  </h2>
+
+  <div class="compare-box">
+    <div class="hidden-visibility">
+      This box uses <code>visibility: hidden</code>. It is invisible but takes up space.
+    </div>
+    <div class="hidden-display">
+      This box uses <code>display: none</code>. It is removed from layout and takes no space.
+    </div>
+    <div>
+      This box is visible and normal.
+    </div>
+  </div>
+
+</body>
+</html>

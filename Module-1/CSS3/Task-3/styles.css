@@ -1,0 +1,111 @@
+/* =======================================
+   UNIVERSAL RESET
+======================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================================
+   BASE STYLES
+======================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* =======================================
+   ID SELECTOR - HEADER
+======================================= */
+#mainHeader {
+    background: linear-gradient(to right, #007BFF, #00BFFF);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 4px solid #0056b3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#mainHeader h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#mainHeader p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* =======================================
+   ELEMENT SELECTOR
+======================================= */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+    color: #004080;
+}
+
+/* =======================================
+   CLASS SELECTOR - EVENT CARDS
+======================================= */
+.eventCard {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 85%;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+}
+
+/* =======================================
+   GROUPING SELECTOR
+======================================= */
+h3, p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* =======================================
+   BUTTON STYLES
+======================================= */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* =======================================
+   FOOTER STYLES
+======================================= */
+footer {
+    background-color: #e6f2ff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
